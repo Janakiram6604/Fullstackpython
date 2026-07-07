@@ -135,16 +135,46 @@
 #     print("Please log in to continue.")
 
 ####################
-pin = 1234
-balance = 1000
-entered_pin = int(input("Enter your PIN: "))
-if entered_pin == pin:
-    witdrawel_amount = float(input("Enter withdrawal amount: "))
-    if witdrawel_amount <= balance:
-        balance -= witdrawel_amount
-        print("Withdrawal successful.")
-    else:
-        print("Insufficient balance.")
-    print("Your balance is:", balance)
-else:
-    print("Incorrect PIN.")
+# pin = 1234
+# balance = 1000
+# entered_pin = int(input("Enter your PIN: "))
+# if entered_pin == pin:
+#     witdrawel_amount = float(input("Enter withdrawal amount: "))
+#     if witdrawel_amount <= balance:
+#         balance -= witdrawel_amount
+#         print("Withdrawal successful.")
+#     else:
+#         print("Insufficient balance.")
+#     print("Your balance is:", balance)
+# else:
+#     print("Incorrect PIN.")
+
+###################
+# for i in range(1, 6):
+#     print(f"Sending mail {i}")
+
+# ##################
+# name = "dhoni"
+# for char in name:
+#     print(char)
+
+# ######################
+# count = 1
+# while count <= 5:
+#     print(f"Sending mail {count}")
+#     count += 3
+
+# #######################
+# for i in range(10):
+#     if i == 5:
+#         break
+#     print(f"Sending mail {i}")
+
+# #########################
+# student=["ram", "shyam", "hari", "gita"]
+# student.append("sita")
+# student.remove("shyam")
+# print(student)
+
+##################
+stude
