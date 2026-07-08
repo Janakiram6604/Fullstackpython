@@ -282,10 +282,19 @@
 # except ValueError:
 #     print("Error: Invalid input. Please enter a valid integer.")
 
+#################
+# try:
+#     file =open("non_existent_file.txt", "r")
+#     print(file.read())
+# except FileNotFoundError:
+#     print("Error: The file does not exist.")
+# finally:
+#     print("File operation completed.")
+
+####################
 try:
-    file =open("non_existent_file.txt", "r")
-    print(file.read())
-except FileNotFoundError:
-    print("Error: The file does not exist.")
-finally:
-    print("File operation completed.")
+    print(10/2)
+except:
+    print("error")
+else:
+    print("no error")
