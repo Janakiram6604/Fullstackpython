@@ -1,3 +1,3 @@
 from django.contrib import admin
 
-# Register your models here.
+# No custom user model is defined in this active project setup.

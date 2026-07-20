@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--r_g70im*hbw0##s6+s91pl)^)a12f+0#rpjxb6l0j!b_1pge='
+SECRET_KEY = 'django-insecure-ji&_&3mav788_2&#kpo+x6rzq-xrd!ibjag3d#wokwn6h7-0ki'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,20 +76,11 @@ WSGI_APPLICATION = 'bookshelf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'demo',
-        'USER':'postgres',
-        'PASSWORD':'123456',
-        'HOST':'localhost',
-        'port':'5432',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
-AUTH_USER_MODEL = 'accounts.CustomUser'
-STATICFILES_DIRS = [BASE_DIR / 'STATIC']
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
@@ -125,4 +116,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_URL = '/static/'
